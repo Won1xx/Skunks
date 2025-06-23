@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сколько живут скунсы? | Удивительные факты</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-pattern {
+            background-image: radial-gradient(circle, #f3f4f6 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .skunk-bg {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skunk-fact::before {
+            content: "» ";
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 hero-pattern">
+    <!-- Header -->
+    <header class="skunk-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-paw text-2xl text-purple-300"></i>
+                    <h1 class="text-2xl font-bold">Skunk<span class="text-purple-300">Life</span></h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#about" class="hover:text-purple-300 transition">О скунсах</a></li>
+                        <li><a href="#lifespan" class="hover:text-purple-300 transition">Продолжительность жизни</a></li>
+                        <li><a href="#facts" class="hover:text-purple-300 transition">Интересные факты</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-2xl" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden skunk-bg text-white py-4 px-4 shadow-lg">
+        <ul class="space-y-3">
+            <li><a href="#about" class="block py-2 hover:text-purple-300 transition">О скунсах</a></li>
+            <li><a href="#lifespan" class="block py-2 hover:text-purple-300 transition">Продолжительность жизни</a></li>
+            <li><a href="#facts" class="block py-2 hover:text-purple-300 transition">Интересные факты</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="skunk-bg">
+            <div class="container mx-auto px-4 py-20 md:py-28 text-white">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Сколько живут <span class="text-purple-300">скунсы</span>?</h1>
+                    <p class="text-xl md:text-2xl mb-8 text-gray-200">Узнайте удивительные факты о продолжительности жизни этих уникальных животных</p>
+                    <a href="#lifespan" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105 shadow-lg">
+                        Узнать сейчас <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Кто такие <span class="text-purple-600">скунсы</span>?</h2>
+                    <p class="text-gray-600 mb-4 text-lg">Скунсы — это небольшие млекопитающие из семейства скунсовых, известные своей уникальной защитной системой — способностью распылять сильно пахнущую жидкость.</p>
+                    <p class="text-gray-600 mb-4 text-lg">Эти животные обитают преимущественно в Северной и Южной Америке и ведут ночной образ жизни. Существует несколько видов скунсов, отличающихся размерами и окраской.</p>
+                    <div class="bg-purple-50 border-l-4 border-purple-600 p-4 rounded-r mb-4">
+                        <p class="text-purple-800 font-medium"><i class="fas fa-info-circle mr-2"></i> Интересно: Скунсы всеядны — они питаются как растениями, так и мелкими животными, включая насекомых, грызунов и даже змей!</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1581703234691-2cdc3dd17e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Скунс в природе" 
+                             class="w-full h-auto object-cover rounded-xl transition duration-500 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifespan Section -->
+    <section id="lifespan" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Продолжительность жизни скунсов</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+                    <div class="h-48 bg-purple-600 flex items-center justify-center">
+                        <i class="fas fa-forest text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">В дикой природе</h3>
+                        <p class="text-gray-600 mb-4">В естественной среде обитания скунсы живут в среднем <span class="font-bold text-purple-600">2-4 года</span>. Основные причины смертности:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-paw text-purple-500 mt-1 mr-2"></i>
+                                <span>Хищники (совы, койоты, лисы)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-car text-purple-500 mt-1 mr-2"></i>
+                                <span>Дорожные происшествия</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-virus text-purple-500 mt-1 mr-2"></i>
+                                <span>Болезни (бешенство, чума)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+                    <div class="h-48 bg-purple-700 flex items-center justify-center">
+                        <i class="fas fa-home text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">В неволе</h3>
+                        <p class="text-gray-600 mb-4">В домашних условиях или зоопарках скунсы могут прожить значительно дольше — <span class="font-bold text-purple-600">7-10 лет</span>, а иногда и до 15 лет.</p>
+                        <p class="text-gray-600 mb-4">Факторы, способствующие долголетию:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-utensils text-purple-500 mt-1 mr-2"></i>
+                                <span>Сбалансированное питание</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-shield-virus text-purple-500 mt-1 mr-2"></i>
+                                <span>Регулярная ветеринарная помощь</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-heart text-purple-500 mt-1 mr-2"></i>
+                                <span>Отсутствие стрессов и опасностей</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+                    <div class="h-48 bg-purple-800 flex items-center justify-center">
+                        <i class="fas fa-dna text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Различия по видам</h3>
+                        <p class="text-gray-600 mb-4">Продолжительность жизни может варьироваться в зависимости от вида скунса:</p>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="font-medium">Полосатый скунс</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">4-7 лет</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="font-medium">Пятнистый скунс</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">5-8 лет</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <span class="font-medium">Свинорылый скунс</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">3-5 лет</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium">Капюшоновый скунс</span>
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">6-9 лет</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section id="facts" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Удивительные факты о скунсах</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Эти животные гораздо интереснее, чем кажутся на первый взгляд!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Fact 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-purple-300 transition">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-spray-can text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Защитный механизм</h3>
+                            <p class="text-gray-600">Скунс может распылить свою вонючую жидкость на расстояние до 3-4 метров с удивительной точностью. Эта жидкость содержит тиолы, которые могут вызывать временную слепоту и тошноту.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fact 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-purple-300 transition">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-moon text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Ночные животные</h3>
+                            <p class="text-gray-600">Скунсы ведут преимущественно ночной образ жизни. Их зрение слабое, но обоняние и слух отлично развиты, что помогает им находить пищу в темноте.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fact 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-purple-300 transition">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-temperature-low text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Зимняя спячка</h3>
+                            <p class="text-gray-600">В отличие от многих других животных, скунсы не впадают в настоящую спячку. В холодные месяцы они становятся менее активными и могут проводить недели в своих норах, но периодически выходят на поиски пищи.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fact 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-purple-300 transition">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-baby text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Размножение</h3>
+                            <p class="text-gray-600">Самки скунсов рожают 4-7 детенышей за раз. Интересно, что новорожденные скунсы слепы и беспомощны, но уже обладают способностью распылять защитную жидкость через несколько недель после рождения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Longevity Tips -->
+    <section class="py-16 bg-purple-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-purple-600 flex items-center justify-center p-8">
+                        <i class="fas fa-heartbeat text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8 md:w-2/3">
+                        <h2 class="text-2xl font-bold text-gray-
+</body>
+</html>
